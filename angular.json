@@ -3,10 +3,10 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "test-ui-lib": {
+    "test-ui-lib-2": {
       "projectType": "library",
-      "root": "projects/test-ui-lib",
-      "sourceRoot": "projects/test-ui-lib/src",
+      "root": "projects/test-ui-lib-2",
+      "sourceRoot": "projects/test-ui-lib-2/src",
       "prefix": "lib",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,14 +17,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/test-ui-lib/ng-package.json"
+            "project": "projects/test-ui-lib-2/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/test-ui-lib/tsconfig.lib.prod.json"
+              "tsConfig": "projects/test-ui-lib-2/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/test-ui-lib/tsconfig.lib.json"
+              "tsConfig": "projects/test-ui-lib-2/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -32,7 +32,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/test-ui-lib/tsconfig.spec.json",
+            "tsConfig": "projects/test-ui-lib-2/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

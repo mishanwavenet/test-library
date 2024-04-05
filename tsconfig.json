@@ -19,8 +19,8 @@
     "module": "ES2022",
     "useDefineForClassFields": false,
     "paths": {
-      "test-ui-lib": [
-        "./dist/test-ui-lib"
+      "test-ui-lib-2": [
+        "./dist/test-ui-lib-2"
       ]
     },
     "lib": [
